@@ -1,8 +1,9 @@
 /*Author:Mandeep Punia*/
 //Link:https://www.hackerrank.com/challenges/torque-and-development/problem
 /* In order to minimise the cost ,the idea is to count the number of cities(let's say count) connected to a particular city and then checking whether the option to 
-build the libraries for all those cities is a good idea or build one library and count-1 roads for them is a good idea.
-The two important function is a dfs function and roadsAndLibraries function.(Rest of the code is by default provided by Hackerrank code editor
+build the libraries for all those cities is a good idea or build one library and count-1 roads for them is a good idea,based upon which we will calculate out
+minimum total cost.
+The two important function is a dfs function and roadsAndLibraries function.(Rest of the code is by default provided by Hackerrank code editor)
 */
 #include <bits/stdc++.h>
 using namespace std;
