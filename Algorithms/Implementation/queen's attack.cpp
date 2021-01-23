@@ -1,15 +1,17 @@
 /*Author:Mandeep Punia*/
 // Link:https://www.hackerrank.com/challenges/queens-attack-2/problem
-/* In this problem i simply stored the coordinates of blocks as a pair in a map and in each call(in queens attack function) i will check whether that coordinates
-is present in my map or not . As soon as i will found the coordinates i will stop counting the empty cells on which queen can attack */
-#include <bits/stdc++.h>
+/* In this problem i simply stored the coordinates of blocks as a pair in a map and in each dfs call(in queens attack function) i will check whether that coordinates
+is present in my map or not . As soon as i will found the coordinates i will stop counting the empty cells on which queen can attack 
+In this solution the two main functions are queensattack and dfs function (rest of the code is by default provided by hackerrank code editor)
+*/
 
+#include <bits/stdc++.h>
 using namespace std;
 
 vector<string> split_string(string);
 int dx[8]={0,0,1,-1,1,-1,-1,1};
 int dy[8]={1,-1,0,0,1,1,-1,-1};
-// Complete the queensAttack function below.
+
 int dfs(int i,int j,int n,int dir_x,int dir_y,map<pair<int,int>, int>&mp){
     int cnt=0;
     while(i+dir_x>0 and j+dir_y>0 and i+dir_x<=n and j+dir_y<=n ){
