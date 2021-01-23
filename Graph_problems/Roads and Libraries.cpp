@@ -18,7 +18,7 @@ void dfs(int node,vector<int>adj[],int *visited,int &count){
         }
     }
 }
-// Complete the roadsAndLibraries function below.
+
 long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities) {
 vector<int> adj[n];
 long total_cost=0;
