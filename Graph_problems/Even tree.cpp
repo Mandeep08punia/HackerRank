@@ -24,7 +24,7 @@ int dfs(int node,vector<int> adj[],int *visited,int &temp_ans){
     }
     return cnt+1;
 }
-// Complete the evenForest function below.
+
 int evenForest(int n, int t_edges, vector<int> u, vector<int> v) {
 vector<int> adj[n];
 int *visited=new int[n]{0};
