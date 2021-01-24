@@ -2,7 +2,6 @@
 // Link:https://www.hackerrank.com/challenges/queens-attack-2/problem
 /* In this problem i simply stored the coordinates of blocks as a pair in a map and in each dfs call(in queens attack function) i will check whether that coordinates
 is present in my map or not . As soon as i will found the coordinates i will stop counting the empty cells on which queen can attack 
-In this solution the two main functions are queensattack and dfs function (rest of the code is by default provided by hackerrank code editor)
 */
 
 #include <bits/stdc++.h>
